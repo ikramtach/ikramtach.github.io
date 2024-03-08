@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Ikram Tachfint Chakir" />
+  <title>Accessibility Toolkit for OER: Images</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css"/>
+    <style type="text/css">code{white-space: pre;}</style>
+    <link rel="stylesheet" href="reveal.js/css/theme/black.css"/>
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+  if( window.location.search.match( /print-pdf/gi ) ) {
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'reveal.js/css/print/pdf.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  }
+</script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">Accessibility Toolkit for OER: Images</h1>
+    <h3 class="author">Ikram Tachfint Chakir</h3>
+    <h4 class="date">Marzo 2024</h3>
+</section>
+
+<section><section id="first-part-introduction" class="title-slide slide level1"><h1>First part: Introduction</h1></section><section id="general-info" class="slide level2">
+<h2>General info</h2>
+<p>Images and graphics play a vital role in enhancing content comprehension and accessibility, particularly for individuals with cognitive and learning disabilities.</p>
+</section><section id="goal-of-web-accessibility" class="slide level2">
+<h2>Goal of web accessibility</h2>
+<ul>
+<li>To make images and graphics “visible” to all users is one of the first principles of web accessibility.</li>
+<li>To make images and graphics “visible” alternative text <strong>(“alt text”)</strong> needs to be added.</li>
+<li>Alternative text provides a textual alternative to non-text content in web pages.</li>
+</ul>
+</section><section id="accessible-images-offer-several-benefits" class="slide level2">
+<h2>Accessible images offer several benefits:</h2>
+<ul>
+<li><strong>People using screen readers:</strong> Alt text can be read aloud or rendered as Braille.</li>
+<li><strong>People using speech input software:</strong> Users can navigate to images using voice commands.</li>
+<li><strong>People browsing speech-enabled websites:</strong> Alt text can be read aloud.</li>
+<li><strong>Mobile web users:</strong> Images can be disabled, particularly for data-roaming.</li>
+<li><strong>Search engine optimization:</strong> Indexed images.</li>
+</ul>
+</section><section id="note" class="slide level2">
+<h2>Note</h2>
+<p>It’s crucial to note that removing images from websites (often termed as “text-only versions”) diminishes accessibility and functionality for users in various situations.</p>
+</section></section>
+<section><section id="second-part-basic-principles-of-image-accessibility" class="title-slide slide level1"><h1>Second part: Basic Principles of Image Accessibility</h1></section><section id="alt-attribute-for-every-image" class="slide level2">
+<h2>1. Alt Attribute for Every Image</h2>
+<ul>
+<li><strong>Every image must have an alt attribute.</strong></li>
+<li>Alternative text (alt-text) is crucial for accessibility.</li>
+</ul>
+</section><section id="providing-alternative-text" class="slide level2">
+<h2>2. Providing Alternative Text</h2>
+<ul>
+<li>Alternative text can be provided in the “alt attribute” or in the surrounding context of the image.</li>
+<li>It should present the <strong>CONTENT</strong> and <strong>FUNCTION</strong> of the image.</li>
+</ul>
+</section><section id="context-matters" class="slide level2">
+<h2>3. Context Matters</h2>
+<ul>
+<li>Appropriate alternative text depends heavily on the image’s context.</li>
+<li>Decorative images still need an alt attribute, but it should be null alt=&quot;&quot;.</li>
+</ul>
+</section><section id="succinct-and-descriptive" class="slide level2">
+<h2>4. Succinct and Descriptive</h2>
+<ul>
+<li>Alternative text should be succinct and avoid phrases like “images of…” or “graphic of…”.</li>
+<li>Alt text of a functional image (e.g., an image within a link) should describe the function as well as the content.</li>
+</ul>
+</section></section>
+<section><section id="third-part-type-of-images" class="title-slide slide level1"><h1>Third part: Type of Images</h1></section><section id="informative-images" class="slide level2">
+<h2>1. Informative Images</h2>
+<ul>
+<li>Graphically represent concepts and information.</li>
+<li>Provide a short description conveying essential information.</li>
+<li><a href="https://www.w3.org/WAI/tutorials/images/informative/">Learn More about Informative Images</a></li>
+</ul>
+</section><section id="example" class="slide level2">
+<h2>Example</h2>
+<figure>
+<img data-src="co.jpeg" alt="Push the cap down and turn it counter-clockwise (from right to left)" /><figcaption>Push the cap down and turn it counter-clockwise (from right to left)</figcaption>
+</figure>
+</section><section id="decorative-images" class="slide level2">
+<h2>2. Decorative Images</h2>
+<ul>
+<li>Add visual decoration to the page.</li>
+<li>Provide a null text alternative (alt=&quot;&quot;).</li>
+<li><a href="https://www.w3.org/WAI/tutorials/images/decorative/">Learn More about Decorative Images</a></li>
+</ul>
+</section><section id="functional-images" class="slide level2">
+<h2>3. Functional Images</h2>
+<ul>
+<li>Used as links or buttons.</li>
+<li>Describe the functionality rather than the visual image.</li>
+<li><a href="https://www.w3.org/WAI/tutorials/images/functional/">Learn More about Functional Images</a></li>
+</ul>
+</section><section id="images-of-text" class="slide level2">
+<h2>4. Images of Text</h2>
+<ul>
+<li>Readable text presented within an image.</li>
+<li>Avoid if possible, but if used, ensure the alt text matches the image text.</li>
+<li><a href="https://www.w3.org/WAI/tutorials/images/textual/">Learn More about Images of Text</a></li>
+</ul>
+</section><section id="complex-images-e.g.-graphs-diagrams" class="slide level2">
+<h2>5. Complex Images (e.g., Graphs, Diagrams)</h2>
+<ul>
+<li>Convey data or detailed information.</li>
+<li>Provide a full-text equivalent.</li>
+<li><a href="https://www.w3.org/WAI/tutorials/images/complex/">Learn More about Complex Images</a></li>
+</ul>
+</section><section id="groups-of-images" class="slide level2">
+<h2>6. Groups of Images</h2>
+<ul>
+<li>Multiple images convey a single piece of information.</li>
+<li>One image should convey the information for the entire group.</li>
+<li><a href="https://www.w3.org/WAI/tutorials/images/groups/">Learn More about Groups of Images</a></li>
+</ul>
+</section><section id="image-maps" class="slide level2">
+<h2>7. Image Maps</h2>
+<ul>
+<li>Images contain multiple clickable areas.</li>
+<li>Provide an overall context for the set of links.</li>
+<li>Each clickable area should have descriptive alternative text.</li>
+<li><a href="https://www.w3.org/WAI/tutorials/images/imagemap/">Learn More about Image Maps</a></li>
+</ul>
+</section></section>
+<section><section id="conclusion" class="title-slide slide level1"><h1>Conclusion</h1></section><section id="web-accessibility-is-essential-for-ensuring-equal-access-to-online-content-for-all-individuals." class="slide level2">
+<h2>Web accessibility is essential for ensuring equal access to online content for all individuals.</h2>
+</section><section id="remember-accessibility-benefits-not-only-individuals-with-disabilities-but-also-enhances-the-user-experience-for-all-users." class="slide level2">
+<h2>Remember, accessibility benefits not only individuals with disabilities but also enhances the user experience for all users.</h2>
+</section><section id="lets-continue-striving-for-a-more-accessible-and-inclusive-web." class="slide level2">
+<h2>Let’s continue striving for a more accessible and inclusive web.</h2>
+</section></section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        theme: 'black', // available themes are in /css/theme
+        transition: 'slide', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+//          { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
+//          { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+]});
+    </script>
+  </body>
+</html>
